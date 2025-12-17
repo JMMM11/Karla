@@ -177,7 +177,6 @@ body {
 /* Secciones flotantes tipo pétalos */
 .section-petal {
   background: linear-gradient(135deg, rgba(30, 30, 40, 0.7), rgba(20, 20, 30, 0.5));
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 30px;
   padding: 60px;
@@ -277,7 +276,7 @@ body {
   right: 20px;
   transform: translateY(-50%);
   font-size: 100px;
-  opacity: 0.08;
+  opacity: 0.08; 
 }
 
 /* Imagen placeholder con efecto */

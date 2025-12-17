@@ -6,6 +6,7 @@
     <title>Bajo el Mismo Cielo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="icon" type="image/png" href="lirio.png" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,7 +14,7 @@
     <!-- Contenedor de estrellas -->
     <div class="stars-container" id="starsContainer"></div>
 
-    <!-- Navegación constelación -->
+
     <nav class="constellation-nav">
         <div class="nav-star" data-section="0" data-label="Inicio"></div>
         <div class="nav-star" data-section="1" data-label="El Cielo"></div>
@@ -46,7 +47,6 @@
             <div class="image-container">
                 <span class="image-placeholder">Espacio para una imagen del cielo estrellado</span>
             </div>
-            <div class="symbol dragon">🐉</div>
         </section>
 
         <!-- Sección 2 -->
@@ -62,7 +62,9 @@
             <div class="image-container">
                 <span class="image-placeholder">📸 Espacio para una imagen del comienzo</span>
             </div>
-            <div class="symbol tulip">🌷</div>
+            <div class="symbol tulip">
+                <img src="tulipan.png" alt="Tulipán">
+            </div>
         </section>
 
         <!-- Sección 3 -->
@@ -78,7 +80,9 @@
             <div class="image-container">
                 <span class="image-placeholder">🏡 Espacio para una imagen de hogar y familia</span>
             </div>
-            <div class="symbol paw">🐕</div>
+            <div class="symbol paw">
+                <img src="huella.png" alt="Tulipán">
+            </div>
         </section>
 
         <!-- Sección 4 -->
@@ -109,7 +113,7 @@
             <div class="image-container">
                 <span class="image-placeholder">⭐ Espacio para una imagen de logros y éxito</span>
             </div>
-            <div class="symbol tulip">🌷</div>
+
         </section>
 
         <!-- Sección 6 -->
@@ -124,8 +128,6 @@
             </div>
             <div class="image-container">
                 <span class="image-placeholder">🌟 Espacio para una imagen de esperanza y fortaleza</span>
-            </div>
-            <div class="symbol dragon">🐉</div>
         </section>
 
         <!-- Sección 7 -->
@@ -167,10 +169,23 @@
                 <p>quiero que sepas</p>
                 <p>que siempre vas a tener un lugar en mí.</p>
                 <br>
-                <p class="signature">Te quiero mucho.<br>Y siempre va a ser así.</p>
+                <p class="signature">Te quiero mucho.<br>Y siempre va a ser así.</p> 
+                <p class="signature">- Jair</p>
             </div>
         </section>
     </div>
+
+    <audio id="bgm" loop>
+        <source src="Together From Afar.mp3" type="audio/mp3">
+    </audio>
+
+        <script>
+        document.addEventListener("click", () => {
+            const audio = document.getElementById("bgm");
+            audio.play();
+        }, { once: true });
+        </script>
+ 
 
     <script src="script.js"></script>
 </body>
