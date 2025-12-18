@@ -1,0 +1,22 @@
+:root {
+    --space-dark: #02040a;
+    --space-blue: #06162d;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Lora", serif;
+    background: radial-gradient(
+        circle at center,
+        var(--space-blue),
+        var(--space-dark) 70%
+    );
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
